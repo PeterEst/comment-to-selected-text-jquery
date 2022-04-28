@@ -28,7 +28,8 @@ $(document).ready(() => {
                 $("#add-btn").click(() => {
                     if($("#myComment").val() != ''){ // if no value DO nothing
                         var date = new Date(); // get Date
-                        var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(); // Date formating                     comment_index++; // index increment
+                        var time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds(); // Date formating
+                        comment_index++; // index increment
                         comment = ($("#myComment").val());
                         $("#myComment").val(''); // Reset myComment value;
                         $("#no-comment").remove();
