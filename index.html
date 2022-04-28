@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>jQuery</title>
+</head>
+<body>
+    <h1 class="header">Select text and press on button.</h1>
+    <div class="container">
+        <div class="block-container">
+            <p class="block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et leo suscipit, aliquam turpis non, efficitur quam. Nullam non est elit. Sed dapibus nisi felis, eget ornare eros interdum eget. Etiam vestibulum vehicula nisi vitae posuere. Nulla sit amet laoreet ipsum. Cras aliquam feugiat nunc. Fusce ipsum mi, dapibus vel gravida sit amet, dictum a dui. Vivamus euismod, nunc id volutpat elementum, nunc sapien tristique felis, consequat mattis augue odio vel nibh. Vestibulum sit amet ante id nunc egestas porta.
+                <br> <br> Aliquam non facilisis lacus, sed venenatis arcu. Nam tempus congue odio, eu volutpat mauris pretium quis. Curabitur facilisis odio vel vulputate aliquam. Proin cursus sem at bibendum egestas. Praesent sed dictum ex. Nunc ornare viverra risus id porttitor. Nam egestas mauris vitae enim elementum lacinia. Nunc eget euismod diam. Nulla consectetur nulla ante, a vestibulum enim imperdiet a. Morbi porttitor sem odio, a pellentesque urna elementum eget. Proin ante leo.</p>
+            <button style="margin: 0;" onclick="getText()">Add comment to selected text</button>
+            <button id="cancel-btn" hidden>Cancel</button>
+            <div id="insert-comment" hidden>
+                <input type="text" name="comment" placeholder="Insert Comment" id="myComment">
+                <button id="add-btn">Add</button>
+            </div>
+        </div>
+        <div class="comment-container">
+            <h1>Comments</h1>
+            <ol class="ol-comment">
+                <p id="no-comment">No Comments Available.</p>
+            </ol>
+        </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

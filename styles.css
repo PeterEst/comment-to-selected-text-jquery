@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F9DC5C;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    color: #011936;
+    font-size: 16px;
+    display: flex;
+    padding: 20px;
+}
+
+.comment-container{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    border: 2px solid #011936;
+    height: 500px;
+    border-radius: 20px;
+    margin: 20px;
+    transition: all .5s ease;
+}
+.comment-container:hover{
+    box-shadow: white 0px 0px 25px;
+}
+.comment-container h1{
+    padding: 10px;
+    margin: 0;
+    color: #011936;
+    text-align: center;
+    border-bottom: 2px solid #011936;
+}
+.comment-container li{
+    font-size: 20px;
+}
+
+span{
+    color: white;
+    border-radius: 5px;
+}
+span p{
+    font-size: 8px;
+    display: inline-block;
+}
+
+.header{
+    width: 500px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #011936;
+    background-color: #F9DC5C;
+    border: 2px solid #011936;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    transition: all .5s ease;
+    cursor:default;
+}
+.header:hover{
+    box-shadow: white 0px 0px 25px;
+}
+
+button{
+    color: #011936;
+    border: 2px solid #011936;
+    background-color: #F9DC5C;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+button:hover{
+    box-shadow: white 0px 0px 25px;
+}
+
+#myComment{
+    border: none;
+    background-color: #F9DC5C;
+    border-bottom: 1px solid #011936;
+    padding: 5px;
+    width: 300px;
+}
+#myComment:focus {
+    outline:none;
+}
